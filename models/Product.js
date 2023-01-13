@@ -69,10 +69,16 @@ const productSchema=new mongoose.Schema(
         type:Boolean, 
         default:true
     },
-    // rating:{
-    //     type:Number,
-    //     default:2.5,
-    // },
+    stars:{
+        type:Number
+    },
+    reviews:{
+        type:Number,
+        
+    },
+    stock:{
+        type:Number,
+    },
     createdAt:{
         type:Date, 
         default:Date.now()
